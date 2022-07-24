@@ -1,0 +1,140 @@
+/* Estilo General */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    /* background-color: rgba(118,117,119,1);
+    color: rgba(255,255,255,1); */
+    box-sizing: border-box;
+}
+
+img {
+    width: 200px;
+}
+
+
+/* Orden */
+
+.titulo {
+    display: flex;
+    grid-area: titulin;
+    background-color: blue;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: barra;
+    background-color: aqua;
+}
+
+.introduccion {
+    display: flex;
+    overflow: auto;
+    grid-area: introduccion;
+    background-color: cadetblue;
+}
+
+.primeraSection {
+    overflow: auto;
+    display: flex;
+    grid-area: primerasection;
+    background-color: chartreuse;
+}
+
+.costado {
+    overflow: auto;
+    display: flex;
+    grid-area: delado;
+    background-color: darkgreen;
+}
+
+
+.articulo1 {
+    grid-area: arti1;
+}
+
+.articulo2 {
+    grid-area: arti2;
+}
+
+.articulo3 {
+    grid-area: arti3;
+}
+
+.noticia1 {
+    grid-area: noti1;
+}
+
+.noticia2 {
+    grid-area: noti2;
+}
+
+.noticia3 {
+    grid-area: noti3;
+}
+
+.pie {
+    display: flex;
+    grid-area: pie;
+    background-color: gold;
+}
+
+.contenedorgeneral {
+    display: grid;
+    overflow: auto;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1 fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: 
+    "titulin titulin titulin titulin titulin"
+    "barra barra barra barra barra"
+    "introduccion introduccion introduccion introduccion introduccion"
+    "arti1 arti1 arti1 noti1 arti1"
+    "arti1 arti1 arti1 noti1 arti1"
+    "arti2 arti2 arti2 noti2 arti2"
+    "arti2 arti2 arti2 noti2 arti2"
+    "arti3 arti3 arti3 noti3 arti3"
+    "arti3 arti3 arti3 noti3 arti3"
+    "pie pie pie pie pie"
+    ;
+}
+
+/* Estilo Pagina Contacto */
+
+
+
+
+/* As RGBa codes 
+
+.rgba-primary-0 { color: rgba(255,255,255,1) }	 Main Primary color 
+.rgba-primary-1 { color: rgba(255,255,252,1) }
+.rgba-primary-2 { color: rgba(228,228,228,1) }
+.rgba-primary-3 { color: rgba(199,199,198,1) }
+.rgba-primary-4 { color: rgba(176,176,174,1) }
+
+.rgba-secondary-1-0 { color: rgba(192,192,192,1) }	Main Secondary color (1) 
+.rgba-secondary-1-1 { color: rgba(191,189,191,1) }
+.rgba-secondary-1-2 { color: rgba(170,170,170,1) }
+.rgba-secondary-1-3 { color: rgba(149,148,149,1) }
+.rgba-secondary-1-4 { color: rgba(132,130,131,1) }
+
+.rgba-secondary-2-0 { color: rgba(179,179,179,1) }	 Main Secondary color (2) 
+.rgba-secondary-2-1 { color: rgba(176,176,178,1) }
+.rgba-secondary-2-2 { color: rgba(158,158,158,1) }
+.rgba-secondary-2-3 { color: rgba(138,138,138,1) }
+.rgba-secondary-2-4 { color: rgba(121,121,122,1) }
+
+.rgba-complement-0 { color: rgba(174,174,174,1) }	 Main Complement color
+.rgba-complement-1 { color: rgba(172,171,173,1) }
+.rgba-complement-2 { color: rgba(153,153,153,1) }
+.rgba-complement-3 { color: rgba(134,134,134,1) }
+.rgba-complement-4 { color: rgba(118,117,119,1) }
+
+*/
+
