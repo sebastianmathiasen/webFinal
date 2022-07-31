@@ -1,140 +1,441 @@
 /* Estilo General */
 * {
-    margin: 0;
+    margin: 0.25%;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
-    /* background-color: rgba(118,117,119,1);
-    color: rgba(255,255,255,1); */
+    color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
 }
 
-img {
-    width: 200px;
+a {
+    text-decoration: none;
 }
+
+.contenedorGeneral {
+    display: grid;
+    overflow: auto;
+    gap: 1%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+        "minombre minombre minombre minombre minombre"
+        "navegador navegador navegador navegador navegador "
+        "intro intro intro intro intro"
+        "section1 section1 section1 delado delado"
+        "section1 section1 section1 delado delado"
+        "section1 section1 section1 delado delado"
+        "section1 section1 section1 delado delado"
+        "section1 section1 section1 delado delado"
+        /* "section1 section1 section1 delado delado" */
+        "pie pie pie pie pie"
+    ;
+}
+
 
 
 /* Orden */
 
 .titulo {
     display: flex;
-    grid-area: titulin;
-    background-color: blue;
+    grid-area: minombre;
+    background-color: rgba(97, 100, 100, 1);
+    text-decoration: line-through;
+    flex-direction: column;
+    text-align: right;
+    padding: 4vh;
+    font-size: larger;
+    font-weight: bold;
+    align-content: center;
 }
+
+
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+nav ul li a:hover {
+    color: rgba(97, 100, 100, 1);
 }
 
 .barra {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    grid-area: barra;
-    background-color: aqua;
+    box-sizing: border-box;
+    padding: 7vh;
+    grid-area: navegador;
+    background-color: rgba(189, 189, 189, 1);
+    align-self: center;
 }
 
 .introduccion {
+    padding: 2%;
     display: flex;
     overflow: auto;
-    grid-area: introduccion;
-    background-color: cadetblue;
+    grid-area: intro;
+    background-color: rgba(100, 102, 104, 1);
 }
 
 .primeraSection {
     overflow: auto;
     display: flex;
-    grid-area: primerasection;
-    background-color: chartreuse;
+    flex-direction: column;
+    grid-area: section1;
+    background-color: rgba(168, 168, 168, 1);
+    gap: 2%;
+    padding: 1%;
+    justify-content: space-evenly;
 }
+
+section article img {
+    width: 200px;
+    border: 1px;
+    background-color: rgba(216, 216, 216, 1);
+}
+
+section article a:hover {
+    color: rgba(97, 100, 100, 1);
+}
+
+
 
 .costado {
     overflow: auto;
     display: flex;
+    flex-direction: column;
     grid-area: delado;
-    background-color: darkgreen;
+    background-color: rgba(157, 154, 151, 1);
+    gap: 2%;
+    padding: 1%;
+    justify-content: space-evenly;
+}
+
+aside div img {
+    width: 60%;
+    border: 1px;
+    background-color: rgba(216, 216, 216, 1);
+}
+
+aside div a:hover {
+    color: rgba(97, 100, 100, 1);
 }
 
 
 .articulo1 {
+    display: flex;
+    flex-direction: column;
     grid-area: arti1;
 }
 
 .articulo2 {
+    display: flex;
+    flex-direction: column;
     grid-area: arti2;
 }
 
 .articulo3 {
     grid-area: arti3;
+    display: flex;
+    flex-direction: column;
 }
 
 .noticia1 {
     grid-area: noti1;
+    display: flex;
+    flex-direction: column;
 }
 
 .noticia2 {
     grid-area: noti2;
+    display: flex;
+    flex-direction: column;
 }
 
 .noticia3 {
     grid-area: noti3;
+    display: flex;
+    flex-direction: column;
 }
 
 .pie {
-    display: flex;
     grid-area: pie;
-    background-color: gold;
+    background-color: rgba(121, 121, 121, 1);
+    align-self: center;
+    padding: 4vw;
 }
 
-.contenedorgeneral {
-    display: grid;
-    overflow: auto;
-    gap: 5px;
-    grid-template-columns: repeat(5, 1 fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: 
-    "titulin titulin titulin titulin titulin"
-    "barra barra barra barra barra"
-    "introduccion introduccion introduccion introduccion introduccion"
-    "arti1 arti1 arti1 noti1 arti1"
-    "arti1 arti1 arti1 noti1 arti1"
-    "arti2 arti2 arti2 noti2 arti2"
-    "arti2 arti2 arti2 noti2 arti2"
-    "arti3 arti3 arti3 noti3 arti3"
-    "arti3 arti3 arti3 noti3 arti3"
-    "pie pie pie pie pie"
-    ;
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-content: center;
+    padding: auto;
 }
+
+footer ul li a img {
+    border-radius: 5px;
+    width: 50px;
+    border: 1px;
+    background-color: rgba(216, 216, 216, 1);
+}
+
+
+
+
 
 /* Estilo Pagina Contacto */
 
+.contenedorContacto {
+    display: grid;
+    overflow: auto;
+    gap: 1%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "minombre minombre minombre minombre minombre"
+        "navegador navegador navegador navegador navegador "
+        "campoformulario campoformulario campoformulario campoformulario campoformulario"
+        "campoformulario campoformulario campoformulario campoformulario campoformulario"
+        "campoformulario campoformulario campoformulario campoformulario campoformulario"
+        /* "section1 section1 section1 delado delado"
+        "section1 section1 section1 delado delado" */
+        "pie pie pie pie pie"
+    ;
+}
+
+
+.contactTitle {
+    border: 0.25%;
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(97, 100, 100, 1);
+}
+
+.campoForm {
+    background-color: rgba(125, 125, 125, 1);
+    display: flex;
+    flex-direction: column;
+    grid-area: campoformulario;
+}
+
+.formulario {
+    background-color: rgba(125, 125, 125, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.subir {
+    color: rgba(100, 102, 104, 1);
+    font-weight: bold;
+}
+
+
+/* Estilo pagina About */
+
+.contenedorAbout {
+    display: grid;
+    overflow: auto;
+    gap: 1%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "minombre minombre minombre minombre minombre"
+        "navegador navegador navegador navegador navegador "
+        "encabezadoA encabezadoA encabezadoA encabezadoA encabezadoA"
+        "parrafoA parrafoA parrafoA parrafoA parrafoA"
+        "parrafoA parrafoA parrafoA parrafoA parrafoA"
+        /* "section1 section1 section1 delado delado"
+        "section1 section1 section1 delado delado" */
+        "pie pie pie pie pie"
+    ;
+
+}
+
+.encabezado {
+    grid-area: encabezadoA;
+    background-color: rgba(121, 121, 121, 1);
+    padding: 4vh;
+    display: flex;
+    overflow: auto;
+    text-align: justify;
+}
+
+.unpocodemiparrafo {
+    grid-area: parrafoA;
+    background-color: rgba(163, 163, 163, 1);
+    text-align: justify;
+    padding: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .contenedorGeneral {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 0.5fr repeat(8, 1fr);
+        grid-template-areas:
+            "minombre minombre minombre"
+            "navegador navegador navegador "
+            "intro intro intro"
+            "section1 section1 section1"
+            "section1 section1 section1"
+            "section1 section1 section1"
+            "section1 section1 section1"
+            "section1 section1 section1"
+            "delado delado delado"
+            "delado delado delado"
+            "delado delado delado"
+            "delado delado delado"
+            "delado delado delado"
+            "pie pie pie"
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .contenedorGeneral {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+            "minombre minombre minombre"
+            "navegador navegador navegador "
+            "intro intro intro"
+            "section1 section1 section1"
+            "section1 section1 section1"
+            "section1 section1 section1"
+            "section1 section1 section1"
+            "section1 section1 section1"
+            "delado delado delado"
+            "delado delado delado"
+            "delado delado delado"
+            "delado delado delado"
+            "delado delado delado"
+            "pie pie pie"
+    }
+
+}
+
+
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=40o0u0k00vX1cjJ0mnj00qE00nL */
+
+/* Feel free to copy&paste color codes to your application */
+
+
+/* As hex codes */
+
+/* .color-primary-0 { color: #FFFFFF }	 Main Primary color 
+.color-primary-1 { color: #9D9A97 }
+.color-primary-2 { color: #BAB8B8 }
+.color-primary-3 { color: #D4D4D4 }
+.color-primary-4 { color: #BDBDBD }
+
+.color-secondary-1-0 { color: #A8A8A8 }	 Main Secondary color (1)
+.color-secondary-1-1 { color: #646668 }
+.color-secondary-1-2 { color: #797A7A }
+.color-secondary-1-3 { color: #8C8C8C }
+.color-secondary-1-4 { color: #7D7D7D }
+
+.color-secondary-2-0 { color: #D8D8D8 }	 Main Secondary color (2) 
+.color-secondary-2-1 { color: #818580 }
+.color-secondary-2-2 { color: #9C9D9C }
+.color-secondary-2-3 { color: #B4B4B4 }
+.color-secondary-2-4 { color: #A1A1A1 }
+
+.color-complement-0 { color: #A3A3A3 }	 Main Complement color 
+.color-complement-1 { color: #616464 }
+.color-complement-2 { color: #757776 }
+.color-complement-3 { color: #888888 }
+.color-complement-4 { color: #797979 } */
 
 
 
-/* As RGBa codes 
+/* As RGBa codes */
 
-.rgba-primary-0 { color: rgba(255,255,255,1) }	 Main Primary color 
-.rgba-primary-1 { color: rgba(255,255,252,1) }
-.rgba-primary-2 { color: rgba(228,228,228,1) }
-.rgba-primary-3 { color: rgba(199,199,198,1) }
-.rgba-primary-4 { color: rgba(176,176,174,1) }
+.rgba-primary-0 {
+    color: rgba(255, 255, 255, 1)
+}
 
-.rgba-secondary-1-0 { color: rgba(192,192,192,1) }	Main Secondary color (1) 
-.rgba-secondary-1-1 { color: rgba(191,189,191,1) }
-.rgba-secondary-1-2 { color: rgba(170,170,170,1) }
-.rgba-secondary-1-3 { color: rgba(149,148,149,1) }
-.rgba-secondary-1-4 { color: rgba(132,130,131,1) }
+/* Main Primary color */
+.rgba-primary-1 {
+    color: rgba(157, 154, 151, 1)
+}
 
-.rgba-secondary-2-0 { color: rgba(179,179,179,1) }	 Main Secondary color (2) 
-.rgba-secondary-2-1 { color: rgba(176,176,178,1) }
-.rgba-secondary-2-2 { color: rgba(158,158,158,1) }
-.rgba-secondary-2-3 { color: rgba(138,138,138,1) }
-.rgba-secondary-2-4 { color: rgba(121,121,122,1) }
+.rgba-primary-2 {
+    color: rgba(186, 184, 184, 1)
+}
 
-.rgba-complement-0 { color: rgba(174,174,174,1) }	 Main Complement color
-.rgba-complement-1 { color: rgba(172,171,173,1) }
-.rgba-complement-2 { color: rgba(153,153,153,1) }
-.rgba-complement-3 { color: rgba(134,134,134,1) }
-.rgba-complement-4 { color: rgba(118,117,119,1) }
+.rgba-primary-3 {
+    color: rgba(212, 212, 212, 1)
+}
 
-*/
+.rgba-primary-4 {
+    color: rgba(189, 189, 189, 1)
+}
 
+.rgba-secondary-1-0 {
+    color: rgba(168, 168, 168, 1)
+}
+
+/* Main Secondary color (1) */
+.rgba-secondary-1-1 {
+    color: rgba(100, 102, 104, 1)
+}
+
+.rgba-secondary-1-2 {
+    color: rgba(121, 122, 122, 1)
+}
+
+.rgba-secondary-1-3 {
+    color: rgba(140, 140, 140, 1)
+}
+
+.rgba-secondary-1-4 {
+    color: rgba(125, 125, 125, 1)
+}
+
+.rgba-secondary-2-0 {
+    color: rgba(216, 216, 216, 1)
+}
+
+/* Main Secondary color (2) */
+.rgba-secondary-2-1 {
+    color: rgba(129, 133, 128, 1)
+}
+
+.rgba-secondary-2-2 {
+    color: rgba(156, 157, 156, 1)
+}
+
+.rgba-secondary-2-3 {
+    color: rgba(180, 180, 180, 1)
+}
+
+.rgba-secondary-2-4 {
+    color: rgba(161, 161, 161, 1)
+}
+
+.rgba-complement-0 {
+    color: rgba(163, 163, 163, 1)
+}
+
+/* Main Complement color */
+.rgba-complement-1 {
+    color: rgba(97, 100, 100, 1)
+}
+
+.rgba-complement-2 {
+    color: rgba(117, 119, 118, 1)
+}
+
+.rgba-complement-3 {
+    color: rgba(136, 136, 136, 1)
+}
+
+.rgba-complement-4 {
+    color: rgba(121, 121, 121, 1)
+}
+
+
+
+/* Generated by Paletton.com © 2002-2014 */
+/* http://paletton.com */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,40 +12,52 @@
     <link rel="icon" href="../recursos/contact_mail_black_24dp.svg" type="image/svg" sizes="24dp">
     <title>miprimeraweb</title>
 </head>
+
 <body>
-    <!-- titulo de pagina-->
-    <header>
-        .sebastian mathiasen
-    </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-        </ul>
-    </nav>
-    <div class="contenedorContacto">
-    <fieldset class="formulario">
-        <legend>Contact us</legend>
-        <form action="">
-            <label for="firstname">First name</label>
-            <input type="text" name="firstname"  id="firstname" placeholder="Your name..">
-            <br><br>
-            <label for="lastname">Last Name</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Your last name..">
-            <br><br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Your email..">
-            <br><br>
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" placeholder="Your phone..">
-            <br><br>
-            <label for="message">Message</label>
-            <br><br>
-            <textarea name="message" id="message" placeholder="Write something.." cols="30" rows="10"></textarea>
-            <br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </fieldset>
-    </div>
+    <main class="contenedorContacto">
+        <!-- titulo de pagina-->
+        <header class="titulo">
+            .sebastian mathiasen
+        </header>
+        <nav class="barra">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="contenedorContacto"> -->
+        <fieldset class="campoForm">
+            <legend class="contactTitle">Contact us</legend>
+            <form action="" class="formulario">
+                <label for="firstname">First name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Your name..">
+                <!-- <br><br> -->
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Your last name..">
+                <!-- <br><br> -->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your email..">
+                <!-- <br><br> -->
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Your phone..">
+                <!-- <br><br> -->
+                <label for="message">Message</label>
+                <!-- <br><br> -->
+                <textarea name="message" id="message" placeholder="Write something.." cols="30" rows="10"></textarea>
+                <!-- <br><br> -->
+                <input type="submit" value="Submit" class="subir">
+            </form>
+        </fieldset>
+        <!-- </div> -->
+        <footer class="pie">
+            <ul class="contactoPie">
+                <li><a href="https://www.facebook.com/sebastian.mathiasen" target="_blank"><img
+                            src="../recursos/f_logo_RGB-Black_58.png" alt="Logo Facebook"></a></li>
+                <li><a href="https://www.instagram.com/derwillevonsam/" target="_blank"><img
+                            src="../recursos/glyph-logo_May2016.png" alt="Logo Instagram"></a></li>
+            </ul>
+        </footer>
+    </main>
 </body>
+
 </html>
